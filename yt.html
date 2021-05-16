@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yt</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body,
+        html {
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,800&display=swap');
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+
+        .button {
+            margin: 10px 390px;
+            color: #494949 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #ffffff;
+            padding: 9px;
+            border: 3px solid #494949 !important;
+            display: inline-block;
+        }
+
+        .container {
+            position: relative;
+            margin: 1% 1%;
+        }
+
+        .bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 850px;
+            height: 65px;
+            background-color: white;
+        }
+
+        p {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        iframe {
+            opacity: 0.03; /* Switch to 0 for real effect */
+        }
+
+        .round {
+            display: flex;
+            align-items: center;
+            margin: 6px 0 0 5px;
+            background: #32557f;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 10;
+            width: 300px;
+            margin: 20px 45px;
+            height: 0;
+            border-bottom: 10px solid #32557f;
+        }
+
+        .arrow::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid #32557f;
+            position: absolute;
+            right: -10px;
+            top: -15px;
+        }
+    </style>
+
+    <p>Pour participer : mettez votre souris sur le cercle, suivez le trait puis cliquez !</p>
+    <div class="container">
+        <div class="bar">
+            <div class="round">
+                <div class="arrow"></div>
+                <a class="button" href="#">PARTICIPER</a>
+            </div>
+        </div>
+        <iframe frameBorder="0" width="850" height="150"
+            src="https://youtube.com/embed/tgbNymZ7vqY?autoplay=1&showinfo=0&controls=0&disablekb=1"></iframe>
+    </div>
+</body>
+
+</html>
