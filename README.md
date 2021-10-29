@@ -4,7 +4,7 @@
 
 
 ## 📖 Usage:
-- Open ``yt.html`` file in Chrome 
+- Open ``index.html`` file in Chrome 
 - Modify ``opacity: 0.03;`` to ``opacity: 0;`` for real effect
 
 ## 📝 TODO:
